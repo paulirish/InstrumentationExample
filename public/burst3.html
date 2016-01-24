@@ -82,7 +82,7 @@
     }
 
 
-    d3.json("/metrics/profile-1434178760480.cpuprofile.json", function (error, root) {
+    d3.json("/metrics/CPU-20160109T142514.cpuprofile", function (error, root) {
         if (error) throw error;
         var path = svg.selectAll("path")
                 .data(partition.nodes(root.head))
